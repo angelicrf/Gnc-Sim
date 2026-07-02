@@ -1,4 +1,4 @@
-# Starlink GNC Simulator
+# GNC Simulator
 
 **A Simple Python Prototype for Guidance, Navigation & Control (GNC) Logic of Phased-Array User Terminals**
 
