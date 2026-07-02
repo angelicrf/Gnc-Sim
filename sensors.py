@@ -1,4 +1,3 @@
-# models/sensors.py
 import numpy as np
 
 class IMU:
