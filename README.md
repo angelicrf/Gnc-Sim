@@ -22,7 +22,7 @@ The simulation runs a closed-loop scenario of a moving platform (e.g., a ship) c
 
 ## Features Demonstrated (Mapped to Job Requirements)
 
-| Job Responsibility / Preferred Experience                  | How This Project Addresses It |
+| Tasks                  | Goals |
 |------------------------------------------------------------|-------------------------------|
 | Design and analysis of GNC logic for phased arrays | Full closed-loop GNC simulation with attitude estimation + beam pointing |
 | Real-time angular & translational navigation               | IMU propagation + GNSS updates at 100 Hz |
