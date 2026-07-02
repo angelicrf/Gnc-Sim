@@ -1,10 +1,9 @@
-# models/satellite.py
 import numpy as np
 
 class SatelliteConstellation:
     def __init__(self, num_sats=6):
         self.num_sats = num_sats
-        # Simplified circular orbits (not real Starlink, just for demo)
+        # Simplified circular orbits (not real sat)
         self.radii = 550e3 + 6371e3  # ~550 km altitude
         self.inclinations = np.linspace(50, 60, num_sats) * np.pi/180
         self.phases = np.linspace(0, 2*np.pi, num_sats, endpoint=False)
