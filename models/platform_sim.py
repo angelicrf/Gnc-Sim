@@ -1,5 +1,5 @@
 import numpy as np
-from math_helpers import quaternion_multiply, normalize_quaternion
+from utils.math_helpers import quaternion_multiply, normalize_quaternion
 
 class MovingPlatform:
     def __init__(self, dt=0.01):
@@ -21,7 +21,7 @@ class MovingPlatform:
 
         # Position/velocity (simple, ignore Coriolis for simplicity; add later for fidelity)
         # Rotate accel to NED
-        from math_helpers import quaternion_to_rotation_matrix
+        from utils.math_helpers import quaternion_to_rotation_matrix
         R_bn = quaternion_to_rotation_matrix(self.quat)
         accel_ned = R_bn @ accel_body + np.array([0, 0, 9.81])  # gravity
         self.vel += accel_ned * self.dt

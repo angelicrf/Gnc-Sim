@@ -3,11 +3,11 @@ import matplotlib.pyplot as plt
 from matplotlib.gridspec import GridSpec
 from pathlib import Path
 
-from platform_sim import MovingPlatform
-from sensors import IMU, GNSS
-from satellite import SatelliteConstellation
-from beam_steering import BeamSteering
-from ekf_attitude import AttitudeINS_EKF
+from models.platform_sim import MovingPlatform
+from models.sensors import IMU, GNSS
+from models.satellite import SatelliteConstellation
+from control.beam_steering import BeamSteering
+from estimation.ekf_attitude import AttitudeINS_EKF
 
 def run_simulation(duration=90.0, dt=0.05, plot=True, save_plots=True):
     print("=" * 60)

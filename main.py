@@ -4,7 +4,7 @@ GNC Simulator - Clean Entry Point
 Only imports and orchestrates the modules.
 """
 
-from simulator import run_simulation
+from simulation.simulator import run_simulation
 
 if __name__ == "__main__":
     # You can easily change parameters here
